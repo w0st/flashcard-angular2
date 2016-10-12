@@ -1,0 +1,25 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-list"></i> Groups</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <thead class="thead-default">
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let group of groups">
+                    <td>{{group.id}}</td>
+                    <td>{{group.name}}</td>
+                    <td>{{group.description}}</td>
+                    <td><a href="#" class="btn btn-default">Show cards</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

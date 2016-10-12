@@ -6,6 +6,7 @@ import { appRoutingProviders, routing } from './app.routing';
 import { NavbarModule } from './shared';
 import { HomeModule } from './home/home.module';
 import { TodolistModule } from './todolist/todolist.module';
+import { GroupModule } from './group/group.module';
 
 @NgModule({
     declarations: [
@@ -15,6 +16,7 @@ import { TodolistModule } from './todolist/todolist.module';
         NavbarModule,
         HomeModule,
         TodolistModule,
+        GroupModule,
         routing
     ],
     providers: [ APP_PROVIDERS, appRoutingProviders ],
