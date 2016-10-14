@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { CONSTANTS } from './shared';
 
 @Component({
-    selector: 'as-main-app',
+    selector: 'fc-main-app',
     templateUrl: 'app/app.html'
 })
 export class AppComponent {

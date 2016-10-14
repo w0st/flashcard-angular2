@@ -1,7 +1,7 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-    selector: 'as-navbar',
+    selector: 'fc-navbar',
     templateUrl: 'app/shared/navbar/navbar.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
