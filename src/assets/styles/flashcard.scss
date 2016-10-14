@@ -1,0 +1,32 @@
+.flipper {
+    @include prefix(perspective, 800, $default-prefixes);
+    position: relative;
+}
+.flipper .card.flipped {
+    @include prefix(transform, rotatey(-180deg), $default-prefixes);
+}
+.flipper .card {
+    width: 100%;
+    height: 100%;
+    @include prefix(transform-style, preserve-3d, $default-prefixes);
+    @include prefix(transition, 0.8s, ms moz webkit o);
+
+}
+.flipper .card .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    @include prefix(backface-visibility, hidden, $default-prefixes);
+
+}
+.flipper .card .front {
+    z-index: 1;
+    background: black;
+    color: white;
+}
+.flipper .card .back {
+    z-index: 2;
+    background: blue;
+    color: black;
+    @include prefix(transform, rotatey(-180deg), $default-prefixes);
+}

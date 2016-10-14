@@ -1,0 +1,28 @@
+<div class="flipper">
+    <div class="card" [ngClass]="{'flipped': flipped}">
+        <div class="face front">
+            <div class = "text-center">
+                Front
+            </div>
+            <div class = "text-center text-primary">
+                {{front}}
+            </div>
+            <button type="button" class="btn btn-default" (click)="reverse()">
+                Reverse
+            </button>
+        </div>
+        <div class="face back">
+            <div class = "text-center">
+                Back
+            </div>
+            <div class = "text-center text-primary">
+                {{back}}
+            </div>
+            <div>
+                <button type="button" class="btn btn-default" (click)="reverse()">
+                    Reverse
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
