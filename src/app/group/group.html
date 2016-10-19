@@ -1,0 +1,10 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-sticky-note"></i> Cards</h3>
+    </div>
+    <div class="panel-body">
+        <fc-flipcard *ngFor="let card of cards" [front]="card.front" [back]="card.back"
+            class="col-sm-4">
+        </fc-flipcard>
+    </div>
+</div>

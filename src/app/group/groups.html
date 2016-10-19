@@ -17,7 +17,7 @@
                     <td>{{group.id}}</td>
                     <td>{{group.name}}</td>
                     <td>{{group.description}}</td>
-                    <td><a href="#" class="btn btn-default">Show cards</a></td>
+                    <td><a class="btn btn-default" [routerLink]="['/group', group.id]">Show cards</a></td>
                 </tr>
             </tbody>
         </table>

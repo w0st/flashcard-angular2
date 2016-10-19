@@ -4,21 +4,23 @@
             <div class = "text-center">
                 Front
             </div>
-            <div class = "text-center text-primary">
-                {{front}}
+            <div class = "text-center card-word">
+                {{front | uppercase}}
             </div>
-            <button type="button" class="btn btn-default" (click)="reverse()">
-                Reverse
-            </button>
+            <div class="text-center bottom">
+                <button type="button" class="btn btn-default" (click)="reverse()">
+                    Reverse
+                </button>
+            </div>
         </div>
         <div class="face back">
             <div class = "text-center">
                 Back
             </div>
-            <div class = "text-center text-primary">
-                {{back}}
+            <div class = "text-center card-word">
+                {{back | uppercase}}
             </div>
-            <div>
+            <div class="text-center bottom">
                 <button type="button" class="btn btn-default" (click)="reverse()">
                     Reverse
                 </button>

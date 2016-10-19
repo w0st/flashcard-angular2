@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
-import { HttpModule, JsonpModule } from '@angular/http';
+import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { GroupsComponent } from './groups.component';
 import { GroupService } from './group.service';
+import { RouterModule } from '@angular/router';
+import { FlipcardModule } from '../flipcard/flipcard.module';
+import { GroupComponent } from './group.component';
 
 
 @NgModule ({
-    declarations: [GroupsComponent],
-    imports: [BrowserModule, HttpModule, JsonpModule],
+    declarations: [GroupsComponent, GroupComponent],
+    imports: [BrowserModule, HttpModule, RouterModule, FlipcardModule],
     exports: [GroupsComponent],
     providers: [GroupService]
 
