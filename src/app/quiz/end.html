@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-gamepad"></i> Quiz Summary</h3>
+    </div>
+    <div class="panel-body">
+        <div class="text-center">
+            Your result: {{correct}}/{{total}}
+        </div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" [ngStyle]="{'width': (correct*100/total)+'%'}">
+            </div>
+        </div>
+        <div *ngIf="incorrectCards.length > 0">
+            <div class="text-center">Pay attention to below cards, please:</div>
+            <fc-flipcard *ngFor="let card of incorrectCards" [front]="card.front" [back]="card.back" class="col-sm-4">
+            </fc-flipcard>
+        </div>
+    </div>
+</div>

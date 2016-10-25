@@ -7,6 +7,7 @@ import { NavbarModule } from './shared';
 import { HomeModule } from './home/home.module';
 import { TodolistModule } from './todolist/todolist.module';
 import { GroupModule } from './group/group.module';
+import { QuizModule } from './quiz/quiz.module';
 
 @NgModule({
     declarations: [
@@ -17,6 +18,7 @@ import { GroupModule } from './group/group.module';
         HomeModule,
         TodolistModule,
         GroupModule,
+        QuizModule,
         routing
     ],
     providers: [ APP_PROVIDERS, appRoutingProviders ],

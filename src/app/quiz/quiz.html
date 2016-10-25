@@ -1,0 +1,28 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-gamepad"></i> Quiz</h3>
+    </div>
+    <div class="panel-body">
+        Select groups:
+        <div class="form-group">
+            <form>
+                <div *ngFor="let group of groups">
+                    <label><input type="checkbox" [(ngModel)]="group.checked" (change)="setWarning(false)" name="todoCompleted">
+                        {{group.name}}
+                    </label>
+                </div>
+                <div class="alert alert-warning" *ngIf="warning">
+                    You must select at least one group of cards to start the quiz.
+                    <button type="button" class="close" aria-label="Close" (click)="setWarning(false)">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <button (click)="start()" class="btn btn-default"
+                        (mouseenter)="!anyChecked() && setWarning(true)" [disabled]="!anyChecked()">Start
+                </button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
