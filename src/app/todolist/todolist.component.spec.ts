@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 import { Todo, TodolistComponent, TodolistModule } from './index';
 
 @Component({
-    selector: 'as-test',
-    template: '<as-todolist></as-todolist>'
+    selector: 'fc-test',
+    template: '<fc-todolist></fc-todolist>'
 })
 class TestComponent {
 }

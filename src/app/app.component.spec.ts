@@ -13,7 +13,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @Component({
-    selector: 'as-test-cmp',
+    selector: 'fc-test-cmp',
     template: '<div class="title">Hello test</div>'
 })
 class TestRouterComponent {
