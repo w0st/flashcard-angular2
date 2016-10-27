@@ -1,3 +1,22 @@
+# Flashcard Angular2
+This repo contains a simple app created with Angular2. I used boilerplate: **[Angular 2 Starter](https://antonybudianto.github.io/angular2-starter/)**. 
+The backend for this app is delivered by a Rails application published in my repository [flashcard-rails](https://github.com/w0st/flashcard-rails).
+For correctly working flashcard-angular2 app you must before sign-in in the rails app. This angular app using browser cookie to identify a session in rails backend.
+If you want to know how deal with Rails, Angular and OAuth2 feel free to check academic project eKRK, developed with my friends.
+
+App can show your groups, flashcards and take a quiz with your flashcards.
+
+### Online version
+You can check this app in action [here](http://flashcard-angular2.herokuapp.com/).
+
+### Development information
+For start app locally type: `npm start`. In order to run specs type: `npm test`
+
+
+For usefully information I keep below README from Angular 2 Starter.
+
+
+
 # Angular 2 Starter
 
 [![Build Status](https://travis-ci.org/antonybudianto/angular2-starter.svg?branch=master)](https://travis-ci.org/antonybudianto/angular2-starter)
