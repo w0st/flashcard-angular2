@@ -44,7 +44,7 @@ module.exports = function () {
         };
 
     var e2eConfig = {
-        seleniumTarget: 'http://127.0.0.1:3000'
+        seleniumTarget: 'http://127.0.0.1:5000'
     };
 
     var systemJs = {
@@ -88,7 +88,7 @@ module.exports = function () {
         var historyApiFallback = require('connect-history-api-fallback');
         var browserSync = {
             dev: {
-                port: 3000,
+                port: process.env.PORT || 5000,
                 server: {
                     baseDir: './src/',
                     middleware: [historyApiFallback()],
@@ -107,7 +107,7 @@ module.exports = function () {
                 ]
             },
             prod: {
-                port: 3001,
+                port: process.env.PORT || 5001,
                 server: {
                     baseDir: './' + build.path,
                     middleware: [historyApiFallback()]
